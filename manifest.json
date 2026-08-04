@@ -1,18 +1,19 @@
 {
-  "name": "Mehr Store",
-  "short_name": "Mehr",
-  "description": "فروشگاه برنامه مهر",
-  "start_url": "../index.html",
-  "display": "standalone",
-  "background_color": "#0b6b45",
-  "theme_color": "#0b6b45",
-  "lang": "fa",
-  "direction": "rtl",
-  "icons": [
-    {
-      "src": "https://cdn-icons-png.flaticon.com/512/888/888857.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "name": "Mehr Store",
+    "short_name": "Mehr",
+    "description": "فروشگاه برنامه مهر",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#075c3a",
+    "theme_color": "#075c3a",
+    "lang": "fa",
+    "dir": "rtl",
+
+    "icons": [
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/888/888857.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
