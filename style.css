@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+body {
+    background: #f4f7f5;
+    color: #222;
+}
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding: 20px 8%;
+    background: #0b6b45;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.search-box input {
+
+    width: 300px;
+    padding: 13px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+}
+
+
+
+/* Hero */
+
+.hero {
+
+    text-align: center;
+    padding: 60px 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 38px;
+    color: #075c3a;
+    margin-bottom: 15px;
+
+}
+
+
+.hero p {
+
+    color: #666;
+    font-size: 18px;
+
+}
+
+
+
+/* Categories */
+
+.categories {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+}
+
+
+.categories button {
+
+    background: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #00000015;
+    transition: 0.3s;
+
+}
+
+
+.categories button:hover {
+
+    background: #0b6b45;
+    color: white;
+
+}
+
+
+
+/* Apps */
+
+.apps {
+
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+
+}
+
+
+
+.app-card {
+
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 10px 30px #00000012;
+    transition: 0.3s;
+
+}
+
+
+.app-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.app-card img {
+
+    width: 75px;
+    height: 75px;
+    border-radius: 18px;
+
+}
+
+
+
+.info h2 {
+
+    margin-bottom: 8px;
+    color: #075c3a;
+
+}
+
+
+.info p {
+
+    color: #666;
+    margin-bottom: 8px;
+
+}
+
+
+.info span {
+
+    font-size: 13px;
+    color: #888;
+
+}
+
+
+.info button {
+
+    display: block;
+    margin-top: 12px;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #0b6b45;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.info button:hover {
+
+    background: #06472e;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    background: #073b27;
+    color: white;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+    .header{
+
+        flex-direction: column;
+
+    }
+
+
+    .search-box input{
+
+        width: 250px;
+
+    }
+
+
+    .hero h1{
+
+        font-size: 28px;
+
+    }
+
+}
