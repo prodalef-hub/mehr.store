@@ -1,40 +1,55 @@
-const cacheName = "mehr-store-v1";
+const CACHE_NAME = "mehr-store-v1";
 
-const files = [
-    "../index.html",
-    "../style.css",
-    "../script.js"
+
+const FILES_TO_CACHE = [
+
+    "./",
+    "./index.html",
+    "./style.css",
+    "./script.js",
+    "./manifest.json"
+
 ];
+
 
 
 self.addEventListener("install", event => {
 
+
     event.waitUntil(
 
-        caches.open(cacheName)
+        caches.open(CACHE_NAME)
         .then(cache => {
 
-            return cache.addAll(files);
+            return cache.addAll(FILES_TO_CACHE);
 
         })
 
     );
 
+
 });
 
 
 
+
+
 self.addEventListener("fetch", event => {
+
 
     event.respondWith(
 
         caches.match(event.request)
         .then(response => {
 
+
             return response || fetch(event.request);
+
 
         })
 
+
     );
+
 
 });
